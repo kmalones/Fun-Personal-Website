@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 3 - Rock Paper Scissors</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Me</h1>
+    </header>
+
+    <nav id="main_nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="contact_page.html">Contact Page</a></li>
+      </ul>
+    </nav>
+    <form class="contact-form" onsubmit="return validateAndSubmit();">
+      <h2>Send a Message</h2>
+
+      <label for="userName">Name:</label>
+      <input type="text" id="userName" name="userName" required />
+
+      <label for="dateScheduled">Preferred Contact Date:</label>
+      <input type="date" id="dateScheduled" name="dateScheduled" required />
+
+      <label for="messageBox">Your Message (No Special Characters):</label>
+      <textarea id="messageBox" name="messageBox" required></textarea>
+
+      <button type="submit">Submit Message</button>
+    </form>
+
+    <script type="text/javascript">
+      function validateAndSubmit() {
+        const message = document.getElementById("messageBox").value;
+        const allowedCharsRegex = /^[a-zA-Z0-9\s.,?!]*$/;
+        if (!allowedCharsRegex.test(message)) {
+          alert(
+            "Validation Failed: The message box cannot accept special characters outside of basic punctuation (.,?!)."
+          );
+          return false;
+        } else {
+          alert("Message Validated successfully! Redirecting...");
+          window.location.href = "success_form_page.html";
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>

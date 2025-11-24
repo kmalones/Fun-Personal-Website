@@ -1,0 +1,44 @@
+#main_nav {
+  background-color: #ae2012;
+  text-align: center;
+  text-shadow: #ffc8dd;
+  padding: 3px;
+}
+
+#main_nav li {
+  display: inline;
+  position: relative;
+  color: white;
+}
+
+#main_nav li:hover {
+  color: #ffafcc;
+}
+
+#main_nav ul li {
+  padding: 50px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #0a9396;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+header {
+  text-align: center;
+  background-color: #c44536;
+}
+
+body {
+  background-color: #e9d8a6;
+  display: flex;
+  flex-direction: column;
+}
