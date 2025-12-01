@@ -28,30 +28,5 @@ python3 -m http.server 8000
 
 Then open `http://localhost:8000/home.html` in your browser.
 
-## Notes about the stylesheet
 
-- `home.css` has been restyled to be responsive and use a simple two-column layout on larger screens.
-- It uses CSS variables for color theming — tweak values in the `:root` at the top of the file to change colors globally.
-- The layout avoids float-based positioning and uses flexbox for better responsiveness.
-
-## Customization ideas
-
-- Replace fonts by adding a web font link in the HTML head (e.g., Google Fonts).
-- Add images to the hero area or within subsections to make the page more visual.
-- Add more semantic HTML (sections, article) for accessibility improvements.
-
-## Running checks
-
-- To preview your changes, edit `home.css` and refresh the browser.
-- If you want me to further update the page (color palette, fonts, or add a navigation highlight), tell me which direction you'd like (minimal changes, modern/flat, playful, or professional).
-
----
-
-If you want, I can also:
-
-- Add a small `README` to the project root instead.
-- Commit these changes to git with a descriptive message.
-- Apply a consistent font via Google Fonts and update the HTML head.
-
-Tell me what you'd like next.
 
